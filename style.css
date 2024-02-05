@@ -102,7 +102,6 @@ nav {
 
 .flex {
     display: flex;
-    flex-direction: row;
 }
 
 .center {
@@ -116,3 +115,58 @@ nav {
 .content-right {
     padding-right: 10%;
 }
+
+.section-about {
+    height: 625px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+}
+
+.section-about .content-right {
+    padding-right: 10%;
+    margin-left: 140px;
+}
+
+.about-h1 {
+    font-family: var(--body-fonts);
+    font-weight: 500;
+    font-size: 32px;
+    color: #561C24;
+    margin-bottom: 32px;
+}
+
+.line{
+    margin-bottom: 32px;
+    color: #561C24;
+    border: 1px solid #561C24;
+}
+
+.about-p {
+    font-family: var(--body-fonts);
+    font-size: 24px;
+    color: #561C24;
+    margin-bottom: 32px;
+}
+
+@media screen and (max-width: 500px) {
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    .bakpia {
+        display: none;
+    }
+
+    .section-about .content-right {
+        padding-right: 10%;
+        margin-left: 10%;
+        
+    }
+
+}
+
