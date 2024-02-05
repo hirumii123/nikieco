@@ -9,38 +9,45 @@
 }
 
 nav {
+    height: 100px;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #E8D8C4;
+    max-width: 100%;
+    position: sticky;
 }
 
 .container {
-    margin: 0 100px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .navbar-brand {
-    background-color: #E8D8C4;
-    height: 100px;
     font-family: var(--title-fonts);
     font-size: 40px;
 }
 
-.navbar-menu ul {
+.navbar-menu li {
     list-style-type: none;
+    display: inline-block;
+    padding-right: 40px;
 }
 
 .navbar-menu a {
+    color: black;
     text-decoration: none;
     font-family: var(--body-fonts);
     font-size: 18px;
     font-weight: 500;
-
-
 }
 
 .button1 {
     background-color: #561C24;
     border-radius: 24px;
-    padding: 12px 20px;
+    padding: 8px 20px;
+    stroke: none;
+    border: none;
 }
 
 .button1 a {
@@ -49,5 +56,63 @@ nav {
     font-family: var(--body-fonts);
     font-size: 18px;
     font-weight: 500;
+}
 
+.hero-section {
+    background-image: url('assets/background_bakpia.png');
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+}
+
+.hero-h1 {
+    font-family: var(--body-fonts);
+    font-weight: 500;
+    color: #E8D8C4;
+    font-size: 64px;
+    line-height: 96px;
+}
+
+.hero-h2 {
+    font-family: var(--body-fonts);
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 24Ppx;
+    margin-top: 24px;
+}
+
+.hero-button {
+    background-color: #561C24;
+    padding: 12px 24px;
+    color: #561C24;
+    border-radius: 24px;
+    border:1px solid #E8D8C4;
+    margin-top: 32px;
+}
+
+.hero-button a{
+    color: #E8D8C4;
+    text-decoration: none;
+    font-family: var(--body-fonts);
+    font-size: 18px;
+    font-weight: 500px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    align-items: center;
+}
+
+.content-left {
+    padding-left: 10%;
+}
+
+.content-right {
+    padding-right: 10%;
 }
