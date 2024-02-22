@@ -45,6 +45,78 @@
                 <p class="about-p">Bakpia Niki Eco terkenal akan Bakpia Original nya yang otentik. Hingga saat ini, Bakpia Niki Eco sudah mendapatkan Rating 4.8/5.0 di Google Maps.</p>
             </div>
         </section>
+
+        <section class="section-gallery flex-center">
+            <h1 class="gallery-h1">Galeri</h1>
+            <div class="gallery-center">
+                <img src="assets/galeri1.png" alt="">
+                <img src="assets/galeri2.png" alt="">
+                <img src="assets/galeri3.png" alt="">
+            </div>
+            <div class="gallery-bottom">
+                <img src="assets/galeri4.png" alt="">
+                <img src="assets/galeri5.png" alt="">
+            </div>
+        </section>
+
+        <section class="section-testimonial flex-center">
+            <h1 class="testimonial-h1">Apa kata mereka?</h1>
+        </section>
+
+        <section class="section-faq">
+            <div class="faq-center">
+                <div class="faq-box">
+                    <h1 class="faq-h1">Yang Sering Ditanyakan</h1>
+                    <button class="accordion">Apakah Bakpia Niki Eco halal?</button>
+                    <div class="panel">
+                    <p>Bakpia Niki Eco sudah tersertifikasi halal</p>
+                    </div>
+        
+                    <button class="accordion">Rasa Bakpia Niki Eco ada apa saja?</button>
+                    <div class="panel">
+                    <p>Bakpia Niki Eco mempertahankan rasa original nya.</p>
+                    </div>
+        
+                    <button class="accordion">Bagaimana cara membelinya?</button>
+                    <div class="panel">
+                    <p>Kamu bisa menghubungi nomor wa yang tertera di bawah</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+
+        <section class="section-location flex center">
+            <div class="content-left">
+                <p class="about-p"><b>Bakpia original NIKI ECO</b> <br>
+                    58V8+9V9, Tlogo, RT.05, Geblagan, Tamantirto, Kec. Kasihan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55294
+                    <br>
+                    <b>Jam Operasional</b> <br>
+                    08.00 - 21.30 WIB (Senin - Jumat)</p>
+            </div>
+            <div class="content-right">
+                <img src="assets/bakpia2.png" alt="">
+            </div>
+        </section>
+        
     </main>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+        }
+    </script>
 </body>
 </html>
