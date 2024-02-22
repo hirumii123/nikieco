@@ -11,6 +11,8 @@
 nav {
     height: 100px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background-color: #E8D8C4;
@@ -62,9 +64,10 @@ nav {
     background-image: url('assets/background_bakpia.png');
     height: calc(100vh - 100px);
     width: 100%;
-    background-size: cover;
-    background-position: center;
     justify-content: space-between;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-h1 {
@@ -117,7 +120,7 @@ nav {
 }
 
 .section-about {
-    height: 625px;
+    height: calc(100vh - 100px);
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -137,7 +140,7 @@ nav {
     margin-bottom: 32px;
 }
 
-.line{
+.line {
     margin-bottom: 32px;
     color: #561C24;
     border: 1px solid #561C24;
@@ -148,6 +151,131 @@ nav {
     font-size: 24px;
     color: #561C24;
     margin-bottom: 32px;
+}
+
+.section-gallery {
+    height: calc(100vh);
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 300px;
+}
+
+.gallery-h1 {
+    font-size: 32px;
+    color: #561C24;
+    font-family: var(--body-fonts);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.gallery-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.gallery-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.section-testimonial {
+    height: 655px;
+    background-color: #561C24;
+}
+
+.testimonial-h1 {
+    font-family: var(--body-fonts);
+    font-size: 32px;
+    color: #E8D8C4;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.section-faq {
+    background-color: #6D2932;
+}
+
+.faq-h1 {
+    font-family: var(--body-fonts);
+    font-size: 32px;
+    color: #E8D8C4;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.faq-center {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.faq-box {
+    padding-bottom: 24px;
+}
+
+.accordion {
+    background-color: #6D2932;
+    color: #E8D8C4;
+    font-family: var(--body-fonts);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 32px;
+    width: 100%;
+    text-align: left;
+    border: 3px solid #E8D8C4;
+    border-radius: 25px;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #561c20;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 30px;
+    margin: 24px 0px;
+    color: #E8D8C4;
+    font-family: var(--body-fonts);
+    font-size: 16px;
+    background-color: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 24px;
+    color: #E8D8C4;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  .section-location {
+    height: calc(100vh - 100px);
+    width: 100%;
+    justify-content: space-between;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .section-location .content-right {
+    padding-right: 10%;
+    margin-left: 140px;
 }
 
 @media screen and (max-width: 500px) {
@@ -165,8 +293,6 @@ nav {
     .section-about .content-right {
         padding-right: 10%;
         margin-left: 10%;
-        
     }
 
 }
-
