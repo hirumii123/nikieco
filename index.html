@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niki Eco</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -12,31 +13,32 @@
 <body>
     <nav class="container">
         <div class="navbar-brand">Niki Eco</div>
-        <div class="navbar-menu">
-            <ul>
-                <li><a href="#">Tentang Kami</a></li>
-                <li><a href="#">Testimoni</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Lokasi</a></li>
-                <button class="button1"><a href="">Pesan Sekarang</a></button>
-            </ul>
+        <div class="navbar-menu" id="menu">
+          <ul>
+            <li><a href="#aboutus">Tentang Kami</a></li>
+            <li><a href="#testimoni">Testimoni</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#lokasi">Lokasi</a></li>
+            <button class="button1"><a href="#pesan">Pesan Sekarang</a></button>
+          </ul>
         </div>
+        
     </nav>
     <main>
         <section class="hero-section flex center">
             <div class="content-left">
                 <h1 class="hero-h1">Cita Rasa <br>Khas Yogyakarta</h1>
                 <h2 class="hero-h2">Nikmati bakpia yang lembut, gurih, dan lezat </h2>
-                <button class="hero-button"><a href="">Eksplor Lebih Lanjut</a></button>
+                <button class="hero-button"><a href="#aboutus">Eksplor Lebih Lanjut</a></button>
             </div>
             <div class="content-right">
                 <img src="assets/bakpia.png" alt="" class="bakpia">
             </div>
         </section>
 
-        <section class="section-about flex center">
+        <section class="section-about flex center" id="aboutus">
             <div class="content-left">
-                <img src="assets/bakpia2.png" alt="">
+                <img src="assets/bakpia2.png" alt="" class="bakpia2">
             </div>
             <div class="content-right">
                 <h1 class="about-h1">Tentang Bakpia Niki Eco</h1>
@@ -46,24 +48,64 @@
             </div>
         </section>
 
-        <section class="section-gallery flex-center">
+        <section class="section-gallery center">
             <h1 class="gallery-h1">Galeri</h1>
             <div class="gallery-center">
-                <img src="assets/galeri1.png" alt="">
-                <img src="assets/galeri2.png" alt="">
-                <img src="assets/galeri3.png" alt="">
+                <img src="assets/galeri1.png" class="gallery-img" alt="">
+                <img src="assets/galeri2.png" class="gallery-img" alt="">
+                <img src="assets/galeri3.png" class="gallery-img" alt="">
             </div>
             <div class="gallery-bottom">
-                <img src="assets/galeri4.png" alt="">
-                <img src="assets/galeri5.png" alt="">
+                <img src="assets/galeri4.png" class="gallery-img" alt="">
+                <img src="assets/galeri5.png" class="gallery-img" alt="">
             </div>
         </section>
 
-        <section class="section-testimonial flex-center">
+        <section class="section-testimonial" id="testimoni">
             <h1 class="testimonial-h1">Apa kata mereka?</h1>
+            <div class="card-container">
+                <div class="card">
+                  <img src="assets/ppl1.jpg" alt="Image" class="rounded-circle">
+                  <h3>Much Soleh</h3>
+                  <p>Bakpia Niki Eco memang eco tenan (enak beneran). Lokasi barat kampus UMY,Penjualnya ,pdhl gak kenal. ngobrol2 malah di suruh icip dulu. Soal rasa jangan tanya,tp coba aja.</p>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/ppl2.jpg" alt="Image" class="rounded-circle">
+                  <h3>Dzuli Annisa</h3>
+                  <p>Bakpianya enak, makan banyak pun nggak bikin eneg, yang belum pernah makan Bakpia Niki Eco wajib coba nih, soal rasa tidak perlu diragukan👍👍👍 …</p>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/ppl3.jpg" alt="Image" class="rounded-circle">
+                  <h3>Oktaviani Es</h3>
+                  <p>Udah berapa kali repeat order. Tiap ada acara atau mau pergi ke luar kota pasti beli oleh2 disini.legiiittt bgt kacang ijonya, apalagi waktu panas ahh mantap</p>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+            </div>
+              
         </section>
 
-        <section class="section-faq">
+        <section class="section-faq" id="faq">
             <div class="faq-center">
                 <div class="faq-box">
                     <h1 class="faq-h1">Yang Sering Ditanyakan</h1>
@@ -86,8 +128,9 @@
             </div>
             
         </section>
-
+        <h1 class="gallery-h1 pt-2" id="lokasi">Lokasi Kami</h1>
         <section class="section-location flex center">
+
             <div class="content-left">
                 <p class="about-p"><b>Bakpia original NIKI ECO</b> <br>
                     58V8+9V9, Tlogo, RT.05, Geblagan, Tamantirto, Kec. Kasihan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55294
@@ -96,9 +139,41 @@
                     08.00 - 21.30 WIB (Senin - Jumat)</p>
             </div>
             <div class="content-right">
-                <img src="assets/bakpia2.png" alt="">
+                <iframe class="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.841716452432!2d110.3123543781316!3d-7.8065754721375376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af91375d00bc3%3A0xefbe08edd32cfcee!2sBakpia%20original%20NIKI%20ECO!5e0!3m2!1sid!2sid!4v1708586302689!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
+
+        <section class="section-cta flex center" id="pesan">
+            <div class="cta-card">
+                <div class="cta-card-content">
+                    <h1 class="cta-h1">Tunggu Apalagi? Pesan Sekarang!</h1>
+                    <p class="cta-p">Hubungi Whatsapp kami untuk mendapatkan informasi <br>
+                        lebih lanjut tentang Bakpia Niki Eco</p>
+                    <button class="cta-button"><a href="https://wa.me/6285800721709" target="_blank">Hubungi Kami</a></button>
+                </div>
+                <img src="assets/bakpia_box.png" alt="Bakpia">
+            </div>
+                       
+        </section>
+
+        <footer class="flex">
+            <div class="footer-left">
+                <h6 class="navbar-brand">Niki Eco</h6>
+                <p>Bakpia Niki Eco adalah Bakpia asal Kota Yogyakarta yang dibuat dari usaha rumahan oleh Bapak Pairan. Beliau mendirikan usaha bakpia ini sejak tahun 2015. </p>
+            </div>
+            <div class="footer-mid">
+                <h2>Quick Links</h2>
+                <p>Tentang Kami</p>
+                <p>Testimoni</p>
+                <p>FAQ</p>
+                <p>Lokasi</p>
+            </div>
+            <div class="footer-right">
+                <h2>Social Media</h2>
+                <p>0858-0072-1709</p>
+                <p>bakpianikieco</p>
+            </div>
+        </footer>
         
     </main>
 
